@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐣PIPI 'S CIRCUS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header> 
+        <img src="img/circo.png" width="180px" alt="foto logotipo">
+      </header>
+    <main>
+        <form id="Formulario" action="#">
+            <fieldset>
+                <legend>Completa y contactanos</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required
+                    placeholder="Nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required
+                    placeholder="Apellido">
+                </div>
+                <div>
+                    <label for="edad">Selecciona tu edad</label> 
+                    <select name="edad" id="">
+                        <option value=""></option>
+                        <option value="-18">-18</option>
+                        <option value="+18">+18</option>
+                        <option value="+25">+25</option>
+                        <option value="+30">+30</option>
+                        <option value="+40">+40</option>
+                    </select>
+                </div>
+                <div class="genero">
+                    <label for="genero">Genero</label> 
+                    <input type="radio" name="genero" value="Masculino">MASCULINO
+                    <input type="radio" name="genero" value="Femenino">FEMENINO
+                    <input type="radio" name="genero" value="Otro">OTRO
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="comentarios">Dejanos tus dudas</label> 
+                    <textarea name="comentarios" id="consultas" cols="50" rows="10"></textarea>
+                </div>
+                <div>
+                    <div>
+                        <button id="botonEnviar">Enviar</button>
+                      </div>
+                    <input type="reset" value="Borrar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footerCUestionario">
+        <section class="redesUno">
+         <a href="https://www.instagram.com/camiarce_22/" target="_blank"><img class="instagram" src="img/instagram.png" alt="foto instagram"></a>
+         <a href="mailto:camiarce001@gmail.com"><img class="gmail" src="img/gmail-1.png" alt="foto gmail"></a>
+         <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="facebook" src="img/facebook-1.png" alt="foto facebook"></a>
+        </section>
+    </footer>  
+    <script src="index.js"></script> 
+    <script>printUsuariosRegistrados()</script>
+</body>
+</html>
